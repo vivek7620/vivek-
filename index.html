@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Phone App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Phone container */
+    .phone {
+      width: 350px;
+      height: 700px;
+      background: #000;
+      border-radius: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    /* Screen */
+    .screen {
+      width: 90%;
+      height: 85%;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Content inside the screen */
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e3e3e3;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:active {
+      background-color: #0056b3;
+    }
+
+    /* Bottom button (Home Button) */
+    .home-button {
+      width: 60px;
+      height: 60px;
+      background: #333;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="screen">
+      <div class="content">
+        <h1>Fake Phone App</h1>
+        <button onclick="alert('Button clicked!')">Click Me</button>
+      </div>
+    </div>
+    <div class="home-button"></div>
+  </div>
+</body>
+</html>
